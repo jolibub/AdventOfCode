@@ -1,6 +1,7 @@
+import ImportPuzzelData as ipd
+
 #Import Input
-with open('./Puzzel1Input.txt') as f:
-  lines = f.readlines()
+lines = ipd.get(2022, 1).split('\n')
 inputData = []
 for l in lines:
   inputData.append(l.strip('\n'))
