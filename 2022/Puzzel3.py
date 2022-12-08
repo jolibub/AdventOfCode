@@ -1,10 +1,10 @@
-# TODO use import for puzzel input
+import ImportPuzzelData as ipd
 
-f = open("puzzelinput3.txt", "r")
+#Import Input
+lines = ipd.get(2022, 3)
 
-lines = f.read()
 inputData = lines.split('\n')
-
+inputData.pop(-1)
 
 #Puzzel Solution 1
 
